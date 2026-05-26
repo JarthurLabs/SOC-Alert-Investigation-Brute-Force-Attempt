@@ -2,25 +2,37 @@
 
 ## Summary
 
-The alert involved multiple failed login attempts against `j.smith` from the same external source IP followed by a successful login. The pattern is consistent with brute-force or password-guessing activity and should be treated as suspicious.
+The alert involved repeated failed logins against one account followed by a successful login from the same external source. This pattern is suspicious and should be escalated for validation.
 
-## Evidence Reviewed
+## Initial observations
 
-- Authentication events
-- Investigation timeline
+At first, the failed logins could have been benign. Users mistype passwords, stored passwords break, and remote access tools can create noise. The successful login after the failures changed the priority.
+
+## Evidence reviewed
+
+- Failed login events
+- Successful login event
 - Source IP pattern
-- Successful login after failures
-- Special privilege event
+- Timeline of activity
+- Privileged event after login
 - Containment checklist
+
+## What could not be confirmed
+
+- Whether the real user performed the login.
+- Whether MFA was required or completed.
+- Whether the source IP was expected.
+- Whether the account accessed sensitive resources after login.
 
 ## Disposition
 
-Confirmed suspicious.
+Suspicious activity pending user verification and MFA review.
 
-## Recommended Actions
+## Recommended actions
 
-1. Reset password.
-2. Revoke sessions.
-3. Confirm MFA status.
-4. Review related account activity.
-5. Tune SIEM rule for failed-login-followed-by-success pattern.
+1. Reset the password.
+2. Revoke active sessions.
+3. Confirm MFA enrollment and recent MFA prompts.
+4. Contact the user or manager for validation.
+5. Review mailbox, file, and SaaS activity after the login.
+6. Tune the detection to look for failed-logins-followed-by-success patterns.

@@ -1,5 +1,12 @@
 # Changelog
 
+## v5.0 - Operational Realism Pass
+
+- Rewrote README to avoid overclaiming compromise
+- Added benign explanations and validation gaps
+- Clarified suspicious disposition pending MFA and user validation
+- Added REALISM_REVIEW_NOTES.md and LESSONS_LEARNED.md
+
 ## v2.0 - Evidence-of-Work Upgrade
 
 ### Added

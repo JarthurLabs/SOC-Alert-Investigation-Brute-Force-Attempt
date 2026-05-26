@@ -2,124 +2,87 @@
 
 ## Overview
 
-This repository contains a SOC-style alert investigation using synthetic authentication logs. The investigation reviews repeated failed logins followed by a successful login, builds a timeline, documents evidence, determines alert disposition, and recommends containment actions.
+This is a SOC triage lab using synthetic authentication logs. The alert involves repeated failed logins followed by a successful login for the same user.
 
-The focus is analyst workflow: validate the alert, review evidence, build a timeline, explain why the activity is suspicious, and document next steps.
+The project focuses on the analyst workflow: check the alert, review related events, build a timeline, decide whether the activity is suspicious, and document containment steps. It does not claim a confirmed breach.
 
-> All users, timestamps, IP addresses, and logs are synthetic. The external IP address uses documentation-safe address space.
-
----
-
-## Scenario
-
-A monitoring rule triggered after multiple failed login attempts against one user account were followed by a successful login from the same source IP. The SOC analyst needs to determine whether this is likely brute force activity, false positive behavior, or a confirmed suspicious event requiring escalation.
-
-The investigation answers five questions:
-
-1. What triggered the alert?
-2. What evidence supports the alert?
-3. Did a successful login occur after failed attempts?
-4. What is the likely impact?
-5. What containment and follow-up actions are recommended?
+All users, IPs, and log events are synthetic.
 
 ---
 
-## Target Roles
+## What triggered the review
 
-| Role | Why This Repository Fits |
+A user account had several failed login attempts from the same external source, followed by a successful login. At first, this could have been a user mistyping a password, a saved password issue, or a remote access problem. The successful login after repeated failures made it more concerning.
+
+---
+
+## Evidence reviewed
+
+| Evidence | Location |
 |---|---|
-| SOC Analyst | Shows alert triage, timeline building, event review, and containment notes |
-| Cybersecurity Analyst | Demonstrates evidence-based investigation and incident documentation |
-| Incident Response Analyst, beginner | Shows containment logic and escalation criteria |
-| Security Implementation Specialist | Connects alert findings to MFA and account-control improvements |
+| Authentication events | `data/authentication-events.csv` |
+| Investigation timeline | `data/investigation-timeline.csv` |
+| Alert summary | `alert-triage/alert-summary.md` |
+| Event ID notes | `evidence/event-id-notes.md` |
+| SIEM query examples | `detection-logic/siem-query-examples.md` |
+| Containment plan | `response/containment-plan.md` |
+| Final analyst report | `reports/final-report.md` |
 
 ---
 
-## Core Deliverables
+## Screenshots
 
-| Area | Deliverables |
-|---|---|
-| Alert Triage | Alert summary, initial severity, affected user, source IP |
-| Log Analysis | Synthetic authentication events and timeline |
-| Investigation Evidence | Source IP analysis, event ID review, triage decision |
-| Detection Logic | SIEM-style query examples and tuning notes |
-| Response | Containment checklist and escalation recommendation |
-| Reporting | Incident summary and final analyst report |
-
----
-
-## Alert Summary
+### Alert summary
 
 ![Alert Summary](./screenshots/alert-summary.svg)
 
----
-
-## Authentication Timeline
-
-The timeline shows why the activity was treated as suspicious: repeated failures followed by successful authentication.
+### Authentication timeline
 
 ![Authentication Timeline](./screenshots/authentication-timeline.svg)
 
----
-
-## Source IP Analysis
-
-The source IP review shows repeated attempts from the same external documentation-safe address.
+### Source IP analysis
 
 ![Source IP Analysis](./screenshots/source-ip-analysis.svg)
 
----
-
-## Triage Decision Flow
+### Triage decision flow
 
 ![Triage Decision Flow](./screenshots/triage-decision.svg)
 
----
-
-## Containment Checklist
+### Containment checklist
 
 ![Containment Checklist](./screenshots/containment-checklist.svg)
 
 ---
 
-## Repository Structure
+## Why severity increased
 
-```text
-.
-├── README.md
-├── CHANGELOG.md
-├── COMMIT_GUIDE.md
-├── alert-triage/
-├── data/
-├── evidence/
-├── detection-logic/
-├── response/
-├── reports/
-├── screenshots/
-└── templates/
-```
+The failed logins alone were not enough to call this compromise. The severity increased because:
+
+- The attempts targeted one account repeatedly.
+- The same source IP was involved.
+- A successful login occurred after the failures.
+- A privileged event appeared shortly after the login.
+- MFA status was not confirmed in the available evidence.
 
 ---
 
-## Key Evidence Files
+## What I could confirm
 
-| File | Purpose |
-|---|---|
-| `data/authentication-events.csv` | Synthetic event log sample |
-| `data/investigation-timeline.csv` | Timeline of suspicious activity |
-| `data/triage-summary.csv` | Alert metadata and disposition |
-| `data/containment-checklist.csv` | Response actions |
-| `detection-logic/siem-query-examples.md` | SIEM-style search examples |
-| `reports/final-report.md` | Completed analyst report |
+- The login pattern was suspicious.
+- The timeline supported escalation.
+- Containment actions were appropriate for a potentially compromised account.
 
----
+## What I could not confirm
 
-## Analyst Conclusion
-
-The activity is consistent with a brute-force or password-guessing attempt because one account received multiple failed logins from the same external source followed by a successful login. The successful login increases severity and requires account validation, password reset, active session revocation, and MFA review.
+- Whether the login was performed by the real user.
+- Whether MFA was challenged or bypassed.
+- Whether the account accessed sensitive data.
+- Whether the source IP was malicious, VPN-related, or expected travel activity.
 
 ---
 
-## Limitations
+## Current disposition
 
-This is a synthetic SOC investigation. It does not contain real logs, real users, real IP addresses, malware, or production incident data.
+**Confirmed suspicious activity pending user and MFA validation.**
+
+The recommended response is to reset the password, revoke sessions, confirm MFA, check related account activity, and review whether the login was legitimate.
