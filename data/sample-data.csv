@@ -1,0 +1,6 @@
+severity_or_type,finding,business_impact,recommended_action
+High,42 failed logins against one account in 9 minutes,Pattern strongly suggests password guessing.,"Validate evidence, assign owner, document remediation, and retest."
+High,One successful login after failures,Potential account compromise requiring validation.,"Validate evidence, assign owner, document remediation, and retest."
+Medium,Login source is geolocated outside normal user region,Anomaly increases suspicion.,"Validate evidence, assign owner, document remediation, and retest."
+Medium,No MFA challenge recorded,Control gap increases account takeover risk.,"Validate evidence, assign owner, document remediation, and retest."
+Low,Alert lacked owner metadata,Slowed triage and escalation.,"Validate evidence, assign owner, document remediation, and retest."
