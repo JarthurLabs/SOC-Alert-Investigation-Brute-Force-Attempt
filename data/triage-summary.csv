@@ -1,0 +1,7 @@
+field,value
+Alert ID,SOC-2026-0142
+Alert Type,Multiple failed logins followed by success
+Primary User,j.smith
+Source IP,203.0.113.44
+Initial Severity,High
+Final Disposition,Confirmed suspicious

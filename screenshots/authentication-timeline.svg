@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">Authentication Timeline</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Event sequence used to determine whether the alert was suspicious</text>
+<rect x="40" y="170" width="130" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Time</text>
+<rect x="170" y="170" width="600" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="182" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Event</text>
+<rect x="770" y="170" width="450" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="782" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Analysis</text>
+<rect x="40" y="224" width="130" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="256" font-size="14" font-family="Arial" fill="#0f172a">09:01</text>
+<rect x="170" y="224" width="600" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="180" y="256" font-size="14" font-family="Arial" fill="#0f172a">First failed login for j.smith from externa</text>
+<rect x="770" y="224" width="450" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="780" y="256" font-size="14" font-family="Arial" fill="#0f172a">Suspicious</text>
+<rect x="40" y="278" width="130" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">09:01-09:09</text>
+<rect x="170" y="278" width="600" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="180" y="310" font-size="14" font-family="Arial" fill="#0f172a">Multiple failed logins from same source</text>
+<rect x="770" y="278" width="450" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="780" y="310" font-size="14" font-family="Arial" fill="#0f172a">Brute-force pattern</text>
+<rect x="40" y="332" width="130" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">09:09</text>
+<rect x="170" y="332" width="600" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="180" y="364" font-size="14" font-family="Arial" fill="#0f172a">Successful login after failures</text>
+<rect x="770" y="332" width="450" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="780" y="364" font-size="14" font-family="Arial" fill="#0f172a">Potential compromise</text>
+<rect x="40" y="386" width="130" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">09:11</text>
+<rect x="170" y="386" width="600" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="180" y="418" font-size="14" font-family="Arial" fill="#0f172a">Special privilege event observed</text>
+<rect x="770" y="386" width="450" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="780" y="418" font-size="14" font-family="Arial" fill="#0f172a">Requires validation</text>
+<rect x="40" y="440" width="130" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="472" font-size="14" font-family="Arial" fill="#0f172a">09:14</text>
+<rect x="170" y="440" width="600" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="180" y="472" font-size="14" font-family="Arial" fill="#0f172a">Logoff recorded</text>
+<rect x="770" y="440" width="450" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="780" y="472" font-size="14" font-family="Arial" fill="#0f172a">Session ended</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+</svg>

@@ -1,0 +1,6 @@
+action,status,reason
+Disable or lock account,Complete,Prevents continued access while validating
+Reset password,Complete,Removes attacker-known credential risk
+Revoke active sessions,Complete,Terminates suspicious session
+Check MFA status,In Progress,Confirm whether control blocked or allowed access
+Review related accounts,Planned,Look for password spraying pattern

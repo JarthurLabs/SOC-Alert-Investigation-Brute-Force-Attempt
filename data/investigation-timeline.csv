@@ -1,0 +1,6 @@
+time,event,analysis
+09:01,First failed login for j.smith from external test IP,Suspicious
+09:01-09:09,Multiple failed logins from same source,Brute-force pattern
+09:09,Successful login after failures,Potential compromise
+09:11,Special privilege event observed,Requires validation
+09:14,Logoff recorded,Session ended

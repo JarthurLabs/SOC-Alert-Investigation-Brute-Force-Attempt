@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760">
+<rect width="1280" height="760" fill="#f8fafc"/>
+<rect x="20" y="20" width="1240" height="720" rx="24" fill="#e2e8f0"/>
+<rect x="40" y="40" width="1200" height="96" rx="16" fill="#0f172a"/>
+<text x="70" y="82" font-size="30" font-family="Arial" fill="#ffffff" font-weight="700">Containment Checklist</text>
+<text x="70" y="114" font-size="18" font-family="Arial" fill="#cbd5e1">Immediate response actions after suspicious successful login</text>
+<rect x="40" y="170" width="420" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="52" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Action</text>
+<rect x="460" y="170" width="170" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="472" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Status</text>
+<rect x="630" y="170" width="590" height="54" fill="#1e293b" stroke="#334155"/>
+<text x="642" y="203" font-size="16" font-family="Arial" fill="#ffffff" font-weight="700">Reason</text>
+<rect x="40" y="224" width="420" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="256" font-size="14" font-family="Arial" fill="#0f172a">Disable or lock account</text>
+<rect x="460" y="224" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="470" y="256" font-size="14" font-family="Arial" fill="#166534">Complete</text>
+<rect x="630" y="224" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="640" y="256" font-size="14" font-family="Arial" fill="#0f172a">Prevents continued access while validating</text>
+<rect x="40" y="278" width="420" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="310" font-size="14" font-family="Arial" fill="#0f172a">Reset password</text>
+<rect x="460" y="278" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="470" y="310" font-size="14" font-family="Arial" fill="#166534">Complete</text>
+<rect x="630" y="278" width="590" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="640" y="310" font-size="14" font-family="Arial" fill="#0f172a">Removes attacker-known credential risk</text>
+<rect x="40" y="332" width="420" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="364" font-size="14" font-family="Arial" fill="#0f172a">Revoke active sessions</text>
+<rect x="460" y="332" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="470" y="364" font-size="14" font-family="Arial" fill="#166534">Complete</text>
+<rect x="630" y="332" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="640" y="364" font-size="14" font-family="Arial" fill="#0f172a">Terminates suspicious session</text>
+<rect x="40" y="386" width="420" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="50" y="418" font-size="14" font-family="Arial" fill="#0f172a">Check MFA status</text>
+<rect x="460" y="386" width="170" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="470" y="418" font-size="14" font-family="Arial" fill="#92400e">In Progress</text>
+<rect x="630" y="386" width="590" height="54" fill="#f1f5f9" stroke="#cbd5e1"/>
+<text x="640" y="418" font-size="14" font-family="Arial" fill="#0f172a">Confirm whether control blocked or allowed </text>
+<rect x="40" y="440" width="420" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="50" y="472" font-size="14" font-family="Arial" fill="#0f172a">Review related accounts</text>
+<rect x="460" y="440" width="170" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="470" y="472" font-size="14" font-family="Arial" fill="#0f172a">Planned</text>
+<rect x="630" y="440" width="590" height="54" fill="#ffffff" stroke="#cbd5e1"/>
+<text x="640" y="472" font-size="14" font-family="Arial" fill="#0f172a">Look for password spraying pattern</text>
+<text x="40" y="720" font-size="17" font-family="Arial" fill="#475569">Synthetic screenshot for GitHub README and public security portfolio documentation</text>
+</svg>
