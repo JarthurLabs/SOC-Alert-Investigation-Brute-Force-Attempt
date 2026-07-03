@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="390" viewBox="0 0 940 390">
+  <rect width="940" height="390" fill="#f8fafc"/>
+  <text x="42" y="48" font-family="Georgia, serif" font-size="27" fill="#0f172a">Detection threshold tuning</text>
+  <text x="44" y="78" font-family="Arial" font-size="14" fill="#475569">The first idea was technically true but noisy. The revised version focused on the pattern that mattered.</text>
+
+  <rect x="65" y="120" width="355" height="210" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="92" y="155" font-family="Arial" font-size="20" font-weight="bold" fill="#991b1b">Version 1</text>
+  <text x="92" y="195" font-family="Arial" font-size="15" fill="#1f2937">Trigger: 3 failed logins in 10 minutes</text>
+  <rect x="92" y="222" width="260" height="26" fill="#fee2e2"/>
+  <text x="104" y="241" font-family="Arial" font-size="13" fill="#7f1d1d">Caught too many normal mistakes</text>
+  <text x="92" y="282" font-family="Arial" font-size="14" fill="#64748b">Result: noisy, not very helpful.</text>
+
+  <path d="M452 224 C485 199, 506 200, 536 224" stroke="#64748b" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M522 211 L538 225 L520 236" stroke="#64748b" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+  <rect x="565" y="112" width="315" height="226" rx="14" fill="#ecfdf5" stroke="#047857" stroke-width="2"/>
+  <text x="592" y="150" font-family="Arial" font-size="20" font-weight="bold" fill="#065f46">Version 2</text>
+  <text x="592" y="190" font-family="Arial" font-size="15" fill="#1f2937">Trigger: repeated failures + success</text>
+  <text x="592" y="218" font-family="Arial" font-size="15" fill="#1f2937">Same source, same user, short window</text>
+  <text x="592" y="246" font-family="Arial" font-size="15" fill="#1f2937">Escalate if privileged event follows</text>
+  <rect x="592" y="270" width="236" height="30" fill="#bbf7d0"/>
+  <text x="605" y="290" font-family="Arial" font-size="13" fill="#065f46">Less noise, better analyst signal</text>
+</svg>
