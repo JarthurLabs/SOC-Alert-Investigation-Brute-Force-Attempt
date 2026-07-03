@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="360" viewBox="0 0 960 360">
+  <rect width="960" height="360" fill="#fffaf0"/>
+  <text x="45" y="50" font-family="Comic Sans MS, Arial" font-size="29" fill="#252525">Authentication timeline — why the alert got interesting</text>
+  <text x="48" y="79" font-family="Comic Sans MS, Arial" font-size="15" fill="#555">A few failed logins happen. A repeated pattern followed by success is a different conversation.</text>
+
+  <path d="M95 190 C210 176, 318 199, 430 184 S650 190, 850 180" stroke="#333" stroke-width="4" fill="none" stroke-linecap="round"/>
+
+  <circle cx="150" cy="184" r="13" fill="#f87171" stroke="#333" stroke-width="2"/>
+  <text x="118" y="227" font-family="Comic Sans MS, Arial" font-size="14">failed</text>
+  <text x="103" y="247" font-family="Comic Sans MS, Arial" font-size="12">password?</text>
+
+  <circle cx="270" cy="190" r="13" fill="#f87171" stroke="#333" stroke-width="2"/>
+  <text x="238" y="227" font-family="Comic Sans MS, Arial" font-size="14">failed</text>
+
+  <circle cx="390" cy="186" r="13" fill="#f87171" stroke="#333" stroke-width="2"/>
+  <text x="358" y="227" font-family="Comic Sans MS, Arial" font-size="14">failed</text>
+
+  <circle cx="530" cy="188" r="14" fill="#facc15" stroke="#333" stroke-width="2"/>
+  <text x="488" y="227" font-family="Comic Sans MS, Arial" font-size="14">successful login</text>
+
+  <circle cx="705" cy="186" r="14" fill="#fb923c" stroke="#333" stroke-width="2"/>
+  <text x="662" y="227" font-family="Comic Sans MS, Arial" font-size="14">privileged event</text>
+
+  <rect x="745" y="95" width="150" height="62" rx="10" fill="#e0f2fe" stroke="#333" stroke-width="2" transform="rotate(-2 745 95)"/>
+  <text x="762" y="121" font-family="Comic Sans MS, Arial" font-size="14">not proof by itself</text>
+  <text x="762" y="142" font-family="Comic Sans MS, Arial" font-size="14">but worth checking</text>
+
+  <path d="M705 172 C725 150, 744 137, 760 127" stroke="#333" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+</svg>
